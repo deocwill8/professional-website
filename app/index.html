@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"> 
+
+</head>
+<body ng-app="professionalWebsite">
+    <div ui-view></div>
+    
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>    
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>    
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>  
+  <script src="app.js"></script>
+     
+      <a ui-sref="state1">Home</a>
+      <a ui-sref="state2">About</a>
+      <a ui-sref="state3">Contact</a>
+</body>
+</html>

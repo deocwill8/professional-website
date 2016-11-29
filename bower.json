@@ -1,0 +1,21 @@
+{
+  "name": "professional-website",
+  "description": "website",
+  "main": "index.js",
+  "authors": [
+    "Deona Williams"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "website",
+    "professional"
+  ],
+  "homepage": "https://github.com/deocwill8/professional-website",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
