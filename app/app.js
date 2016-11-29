@@ -1,8 +1,7 @@
 'use strict';
 angular
 .module('professionalWebsite', [
-    'ui.router',
-   
+    'ui.router'
 ])
 .config(function ($stateProvider, $urlRouterProvider){
      //lets set up the rest of the states
