@@ -1,3 +1,33 @@
+body{
+    height: 100%;
+    background: #ffa400; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ffa400 50%, #C0C0C0 50%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffa400 50%, #C0C0C0 50%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffa400 50%, #C0C0C0 50%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffa400 50%, #C0C0C0 50%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.headshot {
+    border-radius: 50%;
+	width: 230px;
+	height: 200px; 
+}
+
 .image-position {
     text-align: center;
 }
+
+/*Use this class in conjunction with container-fluid if you just want to make a div have
+this split color and not the entire website*/
+/*.bg-jumbotron-color {
+    height: 100%;
+    background: #ffa400; 
+    background: -webkit-linear-gradient(#ffa400 50%, #C0C0C0 50%); 
+    background: -o-linear-gradient(#ffa400 50%, #C0C0C0 50%);
+    background: -moz-linear-gradient(#ffa400 50%, #C0C0C0 50%); 
+    background: linear-gradient(#ffa400 50%, #C0C0C0 50%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}*/
+
