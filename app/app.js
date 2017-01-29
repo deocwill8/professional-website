@@ -4,22 +4,22 @@ angular
     'ui.router'
 ])
 .config(function ($stateProvider, $urlRouterProvider){
-     //lets set up the rest of the states
+     //lets set up the states
     $stateProvider
-     .state('state1', {
+     .state('home', {
         url:'/home',
         templateUrl: 'views/home.html'
     })
-    .state('state2', {
+    .state('about', {
         url:'/about',
         templateUrl: 'views/about.html'
     })
-    .state('state3', {
+    .state('contact', {
         url:'/contact',
         templateUrl: 'views/contact.html'
     })
-    //for any unmatched url, redirect to state 2
-     $urlRouterProvider.otherwise('/state1');
+    //for any unmatched url, redirect to home page
+     $urlRouterProvider.otherwise('/home');
 });
 //serves no purpose really just to make sure the main module is working 
 console.log('\'Allo \'Allo!');

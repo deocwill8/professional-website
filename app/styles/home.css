@@ -7,7 +7,7 @@ body{
     background: linear-gradient(#ffa400 50%, #C0C0C0 50%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*overflow-y:hidden;*/
+/*    overflow-y:hidden;*/
 }
 
 .headshot {
@@ -20,13 +20,7 @@ body{
     text-align: center;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #f5f5f5;
-}
+
 
 /*Use this class in conjunction with container-fluid if you just want to make a div have
 this split color and not the entire website*/
