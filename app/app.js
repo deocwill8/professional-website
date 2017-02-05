@@ -6,9 +6,10 @@ angular
 .config(function ($stateProvider, $urlRouterProvider){
      //lets set up the states
     $stateProvider
-     .state('home', {
-        url:'/home',
-        templateUrl: 'views/home.html'
+     .state('Deona', {
+        url:'/Deona',
+        templateUrl: 'views/home.html',
+        controller: 'HomeController'
     })
     .state('about', {
         url:'/about',
@@ -19,7 +20,7 @@ angular
         templateUrl: 'views/contact.html'
     })
     //for any unmatched url, redirect to home page
-     $urlRouterProvider.otherwise('/home');
+     $urlRouterProvider.otherwise('/Deona');
 });
 //serves no purpose really just to make sure the main module is working 
-console.log('\'Allo \'Allo!');
+console.log('The website is functioning');
