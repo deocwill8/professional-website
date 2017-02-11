@@ -1,7 +1,7 @@
 angular.module('professionalWebsite')
-    .controller('HomeController', ['$rootScope','$scope', '$window', function($rootScope, $scope, $window) {
-      $scope.sendEmail = function() {
-          $window.location.href = "mailto:deonawilliams26@gmail.com?subject=Hi Deona&body=";
+    .controller('HomeController', ['$rootScope','$scope', '$window', '$state', function($rootScope, $scope, $window, $state) {
+      $scope.contactMe = function() {
+          $state.go('contact')
       }
-        console.log("This controller works!")
+        console.log("Home controller works!");
     }]);

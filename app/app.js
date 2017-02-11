@@ -17,7 +17,8 @@ angular
     })
     .state('contact', {
         url:'/contact',
-        templateUrl: 'views/contact.html'
+        templateUrl: 'views/contact.html',
+        controller: 'ContactController'
     })
     //for any unmatched url, redirect to home page
      $urlRouterProvider.otherwise('/Deona');

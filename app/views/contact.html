@@ -1,1 +1,20 @@
-<p>Contact me page.</p>
+<div class="container">
+  <h2>Vertical (basic) form</h2>
+  <form>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" ng-model="emailStructure.email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="subject">Password:</label>
+      <input type="text" ng-model="emailStructure.subject" class="form-control" id="subject" placeholder="Say hi!">
+    </div>
+    <div class="form-group">
+        <label for="body">Comment:</label>
+        <textarea class="form-control" ng-model="emailStructure.body" rows="5" id="body"></textarea>
+    </div>
+    <button type="submit" ng-click="sendEmail()" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+
