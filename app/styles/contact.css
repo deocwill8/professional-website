@@ -45,3 +45,7 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
 }
+.photo-size {
+	width: 230px;
+	height: 200px; 
+}
