@@ -12,6 +12,7 @@
 </head>
     
 <body ng-app="professionalWebsite">
+    <nav-bar></nav-bar>
     <div ui-view></div>
   
   <script src="/bower_components/jquery/dist/jquery.js"></script>     
@@ -20,7 +21,8 @@
   <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>    
   <script src="app.js"></script>
   <script src="/app/scripts/controllers/home.js"></script> 
-  <script src="/app/scripts/controllers/contact.js"></script>    
+  <script src="/app/scripts/controllers/contact.js"></script> 
+  <script src="/app/scripts/directives/nav-bar.js"></script>    
      
 <!-- take out of project when no longer need these are links to the other pages 
       <a ui-sref="home">Home</a>

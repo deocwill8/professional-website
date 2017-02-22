@@ -7,16 +7,16 @@ angular
      //lets set up the states
     $stateProvider
      .state('Deona', {
-        url:'/Deona',
+        url: '/Deona',
         templateUrl: 'views/home.html',
         controller: 'HomeController'
     })
     .state('about', {
-        url:'/about',
+        url: '/about',
         templateUrl: 'views/about.html'
     })
     .state('contact', {
-        url:'/contact',
+        url: '/contact',
         templateUrl: 'views/contact.html',
         controller: 'ContactController'
     })
