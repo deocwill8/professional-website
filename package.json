@@ -22,5 +22,8 @@
   "homepage": "https://github.com/deocwill8/professional-website#readme",
   "devDependencies": {
     "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "nodemailer": "^3.1.4"
   }
 }
