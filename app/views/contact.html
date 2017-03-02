@@ -2,18 +2,27 @@
     <h3 class="text-center">stay in contact</h3>
     
     <div class="row">
-         <img class="img-responsive photo-size col-md-6" src="./images/deona.jpg">
-
-        <ng-form novalidate class="form-group col-md-6">
-            <label>Name:</label>
-            <input class="form-control" type="text" ng-model="user.name" />
-            <label for="email">E-mail address:</label>
-            <input class="form-control" id="email" type="email" ng-model="user.email" />
-            <label for="message">Message:</label>
-            <input class="form-control" id="message" type="textarea" rows="5" ng-model="user.message" />
-            <button type="submit" class="btn btn-default">Submit</button>
-        </ng-form>
-
+        <div class="col-md-4 col-md-push-3">
+             <img class="img-responsive photo-size col-md-6" src="./images/deona.jpg">
+        </div>
+        
+        <div class="col-md-6 col-md-offset-2">
+            <ng-form novalidate class="form-group col-md-6">
+                <label>Name:</label>
+                <input class="form-control" type="text" ng-model="user.name" />
+            
+                <label for="subject">Subject:</label>
+                <input class="form-control" id="subject" type="text" ng-model="user.subject" />
+            
+                <label for="email">E-mail address:</label>
+                <input class="form-control" id="email" type="email" ng-model="user.email" />
+            
+                <label for="message">Message:</label>
+                <input class="form-control" id="message" type="textarea" rows="5" ng-model="user.message" />
+            
+                <button type="submit" ng-click="sendEmail(user)" class="btn btn-default">Submit</button>
+            </ng-form>
+        </div>
     </div>
     
     <div class="row">
@@ -35,6 +44,7 @@
             </div> 
         </div>
     </div> 
+    
 </div>
 
 
