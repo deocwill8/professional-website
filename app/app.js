@@ -8,16 +8,16 @@ angular
     $stateProvider
      .state('Deona', {
         url: '/Deona',
-        templateUrl: 'views/home.html',
+        templateUrl: 'app/views/home.html',
         controller: 'HomeController'
     })
     .state('about', {
         url: '/about',
-        templateUrl: 'views/about.html'
+        templateUrl: 'app/views/about.html'
     })
     .state('contact', {
         url: '/contact',
-        templateUrl: 'views/contact.html',
+        templateUrl: 'app/views/contact.html',
         controller: 'ContactController'
     })
     //for any unmatched url, redirect to home page
