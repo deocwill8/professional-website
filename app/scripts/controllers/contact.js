@@ -2,24 +2,18 @@ angular.module('professionalWebsite')
     .controller('ContactController', ['$rootScope','$scope', '$window', '$state', '$http', function($rootScope, $scope, $window, $state, $http) {
         
     $scope.user = {
-        to: "deonawilliams26@gmail.com",
-        subject: "",
-        message: "",
-        email: "",
-        name: ""
+//        to: "deonawilliams26@gmail.com",
+//        subject: "",
+//        message: "",
+//        email: "",
+//        name: ""
     } 
     
     $scope.sendEmail = function(user) {
         $http({
             method: 'POST',
-            url: 'services/contact.php',
-            data: {
-                to: user.to,
-                subject: user.subject,
-                message: user.message,
-                name: user.name,
-                email: user.email,
-            },
+            url: 'contact.php',
+            data: $scope.user,
             headers : { 'Content-Type': 'application/x-www-form-urlencoded' } 
         }).then(function successCallback(data) {
             console.log($scope.user);
@@ -34,7 +28,6 @@ angular.module('professionalWebsite')
             // called asynchronously if an error occurs
             // or server returns response with an error status.
         });
-       
     }   
     console.log("Contact controller works!");
         

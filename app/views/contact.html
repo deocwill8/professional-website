@@ -7,7 +7,7 @@
         </div>
         
         <div class="col-md-6 col-md-offset-2">
-            <ng-form novalidate class="form-group col-md-6">
+            <form novalidate class="form-group col-md-6" name="contactForm" action="contact.php" method="post">
                 <label>Name:</label>
                 <input class="form-control" type="text" ng-model="user.name" />
             
@@ -21,7 +21,7 @@
                 <input class="form-control" id="message" type="textarea" rows="5" ng-model="user.message" />
             
                 <button type="submit" ng-click="sendEmail(user)" class="btn btn-default">Submit</button>
-            </ng-form>
+            </form>
         </div>
     </div>
     
