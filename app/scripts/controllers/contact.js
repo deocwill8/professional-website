@@ -3,31 +3,34 @@ angular.module('professionalWebsite')
         
     $scope.user = {
         to: "deonawilliams26@gmail.com",
-        name: "",
-        email: "",
         subject: "",
-        message: ""
+        message: "",
+        email: "",
+        name: ""
     } 
     
     $scope.sendEmail = function(user) {
         $http({
             method: 'POST',
-            url: '/webformmailer.php',
+            url: 'services/contact.php',
             data: {
                 to: user.to,
+                subject: user.subject,
+                message: user.message,
                 name: user.name,
                 email: user.email,
-                subject: user.subject,
-                comments: user.message
-            }
+            },
+            headers : { 'Content-Type': 'application/x-www-form-urlencoded' } 
         }).then(function successCallback(data) {
             console.log($scope.user);
+            console.log(data);
             $scope.user = null;
             alert("Thank you for your message");
             // when the response is available
         }, function errorCallback(data) {
              console.log("Form not submitted");
              console.log($scope.user);
+             console.log(data);                    
             // called asynchronously if an error occurs
             // or server returns response with an error status.
         });
