@@ -1,28 +1,32 @@
+error_reporting(-1);
+ini_set('display_errors', 'On');
+set_error_handler("var_dump");
+
 <?php
-   $to = "contact@deonawilliams.com"; 
-   $from = "contact@deonawilliams.com";         
+   //$to = "Deona Williams <contact@deonawilliams.com>"; 
+   //$from = "contact@deonawilliams.com";         
    $name = $_POST["name"];
    $subject = $_POST["subject"];       
    $message = $_POST["message"];
    $email = $_POST["email"];
-   echo "Mail sent";
+   $headers = "From: contact@deonawilliams.com" . "\r\n" .
+    "X-Mailer: PHP/" . phpversion();
 
+    $message ="";
+    $message .="Name : ";
+    $message .=$name;
+    //$.body .="\n";
+    $message .="Subject : ";
+    $message .=$subject;
+    //$.body .="\n";
+    $message .="Message : ";
+    $message .=$message;
+    //$.body .="\n";
+    $message .="Email : ";
+    $message .=$email;
+    //$.body .="\n";
 
-    $body ="";
-    $body .="Name : ";
-    $body .=$name;
-    //$.body .="\n";
-    $body .="Subject : ";
-    $body .=$subject;
-    //$.body .="\n";
-    $body .="Message : ";
-    $body .=$message;
-    //$.body .="\n";
-    $body .="Email : ";
-    $body .=$email;
-    //$.body .="\n";
-
-$go = mail($to, $subject, $body, "From:<$from>");
+$go = mail('contact@deonawilliams.com', $subject, $message, $headers);
 
 if($go) {
     print("Success");
@@ -30,5 +34,3 @@ if($go) {
     print("Failed to send");
 }
 ?>
-
-<!--$headers = $_POST ['email'].$from; -->
