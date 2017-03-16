@@ -8,8 +8,9 @@
         
         <div class="col-md-6 col-md-offset-2">
             <form novalidate class="form-group col-md-6" ng-submit="sendEmail(input)" name="form" action="contact.php" role="form" method="post">
+                
                 <label for="name">Name:</label>
-                <input class="form-control" type="text" id="name" name="name" ng-model="input.name" />
+                <input class="form-control" type="text" id="contactname" name="contactname" ng-model="input.contactname" />
             
                 <label for="subject">Subject:</label>
                 <input class="form-control" id="subject" name="subject" type="text" ng-model="input.subject" />
