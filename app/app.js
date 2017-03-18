@@ -26,7 +26,7 @@ angular
         controller: 'IntroController'
     })
     //for any unmatched url, redirect to home page
-     $urlRouterProvider.otherwise('/Deona');
+     $urlRouterProvider.otherwise('/intro');
 });
 //serves no purpose really just to make sure the main module is working 
 console.log('The website is functioning');
