@@ -8,12 +8,12 @@
     <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"> 
     <link href="/app/styles/home.css" rel="stylesheet">
     <link href="/app/styles/contact.css" rel="stylesheet">
+    <link href="/app/styles/intro.css" rel="stylesheet">
     <link href="/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
     
 <body ng-app="professionalWebsite">
-    <nav-bar></nav-bar>
-    <div ui-view></div>
+    <div ng-class="{'home-body': home || contact, 'intro-body': intro}" ui-view></div>
     
   <script src="/bower_components/jquery/dist/jquery.js"></script>     
   <script src="/bower_components/angular/angular.js"></script>
@@ -21,7 +21,8 @@
   <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>    
   <script src="/app/app.js"></script>
   <script src="/app/scripts/controllers/home.js"></script> 
-  <script src="/app/scripts/controllers/contact.js"></script> 
+  <script src="/app/scripts/controllers/contact.js"></script>
+  <script src="/app/scripts/controllers/intro.js"></script>    
   <script src="/app/scripts/directives/nav-bar.js"></script>
      
 </body>

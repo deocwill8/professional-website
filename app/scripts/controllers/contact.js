@@ -1,5 +1,7 @@
 angular.module('professionalWebsite')
     .controller('ContactController', ['$rootScope','$scope', '$window', '$state', '$http', function($rootScope, $scope, $window, $state, $http) {
+        
+        $scope.contact = true;
     
     $scope.sendEmail = function(input) {
         $http({

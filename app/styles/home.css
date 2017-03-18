@@ -1,4 +1,4 @@
-body{
+.home-body{
     height: 100%;
     background: #DCD0C0; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#DCD0C0 50%, #F4F4F4 50%); /* For Safari 5.1 to 6.0 */
@@ -24,19 +24,3 @@ body{
 .pattern-background{
     background-color: #c0B283;
 }
-
-
-
-/*Use this class in conjunction with container-fluid if you just want to make a div have
-this split color and not the entire website*/
-/*.bg-jumbotron-color {
-    height: 100%;
-    background: #ffa400; 
-    background: -webkit-linear-gradient(#ffa400 50%, #C0C0C0 50%); 
-    background: -o-linear-gradient(#ffa400 50%, #C0C0C0 50%);
-    background: -moz-linear-gradient(#ffa400 50%, #C0C0C0 50%); 
-    background: linear-gradient(#ffa400 50%, #C0C0C0 50%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}*/
-

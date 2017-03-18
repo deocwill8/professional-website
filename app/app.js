@@ -20,6 +20,11 @@ angular
         templateUrl: 'app/views/contact.html',
         controller: 'ContactController'
     })
+    .state('intro', {
+        url: '/intro',
+        templateUrl: 'app/views/intro.html',
+        controller: 'IntroController'
+    })
     //for any unmatched url, redirect to home page
      $urlRouterProvider.otherwise('/Deona');
 });
