@@ -1,10 +1,26 @@
-.intro-body { 
-    height: 100%;
-    width: 100%;
-    background: url("../images/old_map_@2X.png") no-repeat center center fixed;
-    background-color: #cccccc;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
+.irratating-jumbo {
+    margin-top: 100px;
+}
+.page-links{
+    margin-top: 50px;
+}
+.pattern-background{
+    background-color: #c0B283;
+}
+.about-me{
+    text-decoration: underline;
+    font-size: 30px;
+     color: #c0B283;
+}
+.about-me:hover{
+   color: #373737;
+}
+.contact-me-link{
+    text-decoration: underline;
+    font-size: 30px;
+    color: #c0B283;
+}
+.contact-me-link:hover{
+    color: #373737;
 }

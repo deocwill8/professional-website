@@ -1,4 +1,4 @@
-.home-body{
+body{
     height: 100%;
     background: #DCD0C0; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#DCD0C0 50%, #F4F4F4 50%); /* For Safari 5.1 to 6.0 */
@@ -21,6 +21,3 @@
     text-align: center;
 }
 
-.pattern-background{
-    background-color: #c0B283;
-}
