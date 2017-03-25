@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/deocwill8/professional-website#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.8",
     "gulp": "^3.9.1"
   },
   "dependencies": {
