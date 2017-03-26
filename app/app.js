@@ -6,14 +6,10 @@ angular
 .config(function ($stateProvider, $urlRouterProvider){
      //lets set up the states
     $stateProvider
-     .state('Deona', {
-        url: '/Deona',
-        templateUrl: 'app/views/home.html',
-        controller: 'HomeController'
-    })
-    .state('about', {
+     .state('about', {
         url: '/about',
-        templateUrl: 'app/views/about.html'
+        templateUrl: 'app/views/about.html',
+        controller: 'AboutController'
     })
     .state('contact', {
         url: '/contact',

@@ -24,3 +24,13 @@
 .contact-me-link:hover{
     color: #373737;
 }
+
+.headshot {
+    border-radius: 50%;
+    width: 230px;
+    height: 200px;
+}
+
+.image-position {
+    text-align: center;
+}

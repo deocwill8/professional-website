@@ -1,3 +1,7 @@
+html,body {
+    height: 100%;
+}
+
 body{
     height: 100%;
     background: #DCD0C0; /* For browsers that do not support gradients */
@@ -8,16 +12,5 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #373737
-/*    overflow-y:hidden;*/
+    /*    overflow-y:hidden;*/
 }
-
-.headshot {
-    border-radius: 50%;
-	width: 230px;
-	height: 200px; 
-}
-
-.image-position {
-    text-align: center;
-}
-
