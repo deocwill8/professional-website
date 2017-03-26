@@ -24,7 +24,7 @@ angular
         url: '/intro',
         templateUrl: 'app/views/intro.html',
         controller: 'IntroController'
-    })
+    });
     //for any unmatched url, redirect to home page
      $urlRouterProvider.otherwise('/intro');
 });
