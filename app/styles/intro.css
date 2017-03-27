@@ -11,18 +11,18 @@
 .about-me{
     text-decoration: underline;
     font-size: 30px;
-     color: #c0B283;
+    color: #373737;
 }
 .about-me:hover{
-   color: #373737;
+   color: #F4F4F4;
 }
 .contact-me-link{
     text-decoration: underline;
     font-size: 30px;
-    color: #c0B283;
+    color: #373737;
 }
 .contact-me-link:hover{
-    color: #373737;
+    color: #F4F4F4;
 }
 
 .headshot {
