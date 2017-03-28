@@ -50,3 +50,12 @@ a:visited {
     width: 290px;
     height: 260px;
 }
+.header-text{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+}
+.about-me-text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}

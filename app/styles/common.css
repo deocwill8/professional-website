@@ -14,3 +14,7 @@ body{
     color: #373737
     /*    overflow-y:hidden;*/
 }
+.body-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
