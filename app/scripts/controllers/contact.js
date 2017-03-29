@@ -14,11 +14,9 @@ angular.module('professionalWebsite')
             console.log(data);
             $scope.user = null;
             $scope.sent = true;
-            alert("Thank you. Your message has been received.");
             // when the response is available
         }, function errorCallback(data) {
              $scope.sent = false;
-             alert("Oops! Message failed to be received. Please let me know by contacting me at deonawilliams26@outlook.com");
              console.log("Form not submitted");
              console.log(input);
              console.log(data);                    
