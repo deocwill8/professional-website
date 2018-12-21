@@ -1,0 +1,44 @@
+html,body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;          
+    padding: 0;
+    background-color: #f7f7f7;
+    font-family: Arial,sans-serif;
+}
+.about-me-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.centered {
+    height: 100%;
+    width: 100%;
+}
+
+.container1 {
+    background-color: darkcyan;
+}
+.about-me-picture{
+    height:250px;
+    width: 250px;
+}
+.container2 {
+    background-color: slateblue;
+}
+
+.container3 {
+    background-color: blue;
+}
+
+
+  
+
+/* do this or take out one of the squares */
+/* Smaller screens such as phones  */  
+@media screen and (min-width: 0px) and (max-width: 414px) {
+    .about-me-wrapper {
+        flex-direction: column;
+    }
+}
