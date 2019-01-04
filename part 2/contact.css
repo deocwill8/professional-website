@@ -1,129 +1,74 @@
-body {font-family: sans-serif;}
-p {color: #666;}
-
-h2 {
-  font-size: 2em;
-  color: #e74c3c;  
+html,body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;          
+    padding: 0;
+    background-color: #c45e42;
+    font-family: Arial,sans-serif;
 }
 .centered {
-    margin: 0 auto;
-    padding: 0 1em;
+    height: 100%;
+    width: 100%;
 }
-
-@media screen and (min-width: 52em) {
-    .centered {
-        max-width: 52em;
-    }
+.contact-me-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+    height: 100%;
+    width: 100%;
 }
-
-/*--------------------------------------------------------------
-Header styles minus menu
---------------------------------------------------------------*/
-
-.masthead {
-    background: #e74c3c;
-  	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+.container1 {
+    background-color: darkcyan;
+    height: auto;
+    width: 50%;
 }
-
-.site-title {
-    margin: 0 0 1em;
-    padding: 1em 0;
-    font-size: 2em;
-    font-weight: 300;
-    text-align: center;
-    color: black;
+.contact-me-picture {
+    height: 220px;
+    width: 220px;
 }
-
-@media screen and (min-width: 44.44em) {
-    .site-title {
-        font-size: 2em;
-    }
+.contact-me-header {
+    display: inline-block;
+    margin-right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-    
-@media screen and (min-width: 50em) {
-    .site-title {
-        font-size: 2.5em;
-    }
-}
-
-.site-title a {
-    color: hsl(5, 45%, 95%);
-    text-decoration: none;
-}
-
-.site-title a:hover {
+.contact-me-about-text {
     text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Card Based Layout - Base styles */
-body {
-  background: #ecf0f1;
-  line-height: 1.4;
+.container2 {
+    background-color: #e0d0c1;
+    height: auto;
+    width: 50%;
 }
-
-.site-title {
-	color: white;
-}
-
-.card {
-	background: white;
-	margin-bottom: 2em;	
-}
-
-.card a {
-	color: black;
-	text-decoration: none;
-}
-
-.card a:hover {
-	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
-}
-
-.card-content {
-	padding: 1.4em;
-}
-
-.card-content h2 {
-	margin-top: 0;
-	margin-bottom: .5em;
-	font-weight: normal;
-}
-
-.card-content p {
-	font-size: 95%;
-}
-
-img {
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
   width: 100%;
-  height: auto;
+  border: 1px solid #f7f9f9;
+  background: #f7f9f9;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+#contact-form button{
+    width: 100%;
+    background-color: #c45e42;
+    cursor: pointer;
+    font-size: 15px;
 }
 
-/* Flexbox styles */
-@media screen and (min-width: 40em) {  
-  .cards {
-    margin-top: -1em;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .card {
-    margin-bottom: 1em;
-    display: flex;
-    flex: 0 1 calc(50% - 0.5em);
-    /* width: calc(50% - 1em); */
-  }
-} /* mq 40em*/
-
-@media screen and (min-width: 60em) {
-  .cards {
-    margin-top: inherit;
-  }
   
-  .card {
-    margin-bottom: 2em;
-    display: flex;
-    flex: 0 1 calc(33% - 0.5em);
-    /* width: calc(33% - 1em); */
-  }
-} /* mq 60em*/
+
+/* do this or take out one of the squares */
+/* Smaller screens such as phones  */  
+@media screen and (min-width: 0px) and (max-width: 414px) {
+    .about-me-wrapper {
+        flex-direction: column;
+    }
+    .container1 {
+        width: 100%;
+    }
+    .container2 {
+        width: 100%;
+    }
+}
