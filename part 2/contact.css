@@ -13,7 +13,7 @@ html,body {
 .contact-me-wrapper {
     display: flex;
     flex-direction: row;
-    /* align-items: center;
+    /* align-items: center; 
     justify-content: center; */
     height: 100%;
     width: 100%;
@@ -22,6 +22,12 @@ html,body {
     background-color: darkcyan;
     height: auto;
     width: 50%;
+}
+.container1-heading-container{
+    text-align: center;
+}
+.container1-contact-info-container{
+    text-align: center;
 }
 .contact-me-picture {
     height: 220px;
@@ -38,26 +44,41 @@ html,body {
 }
 .container2 {
     background-color: #e0d0c1;
-    height: auto;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+
 }
+
+.contact-form-group{
+    background-color: aqua;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form textarea {
-  width: 100%;
+  width: 95%;
   border: 1px solid #f7f9f9;
   background: #f7f9f9;
   margin: 0 0 5px;
   padding: 10px;
 }
+
+#contact-form textarea {
+    height: 100px;
+    max-width: 95%;
+    resize: none; 
+  }
 #contact-form button{
-    width: 100%;
+    /* width: 70%; */
     background-color: #c45e42;
     cursor: pointer;
     font-size: 15px;
-}
-
-  
+} 
+  /* see if your want them to be able to resize */
 
 /* do this or take out one of the squares */
 /* Smaller screens such as phones  */  
@@ -71,4 +92,19 @@ html,body {
     .container2 {
         width: 100%;
     }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        width: 87%;
+        border: 1px solid #f7f9f9;
+        background: #f7f9f9;
+        margin: 0 0 5px;
+        padding: 10px;
+    }
+    #contact-form textarea {
+        height: 100px;
+        max-width: 97%;
+        resize: none; 
+      }
 }
