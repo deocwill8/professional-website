@@ -54,7 +54,6 @@ html,body {
     background-color: aqua;
     width: 80%;
     margin: 0 auto;
-
 }
 
 #contact-form input[type="text"],
@@ -73,10 +72,11 @@ html,body {
     resize: none; 
   }
 #contact-form button{
-    /* width: 70%; */
     background-color: #c45e42;
     cursor: pointer;
     font-size: 15px;
+    display: block; 
+    margin: 0 auto;
 } 
   /* see if your want them to be able to resize */
 
