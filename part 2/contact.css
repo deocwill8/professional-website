@@ -13,21 +13,24 @@ html,body {
 .contact-me-wrapper {
     display: flex;
     flex-direction: row;
-    /* align-items: center; 
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
 .container1 {
     background-color: darkcyan;
-    height: auto;
+    height: 50%;
     width: 50%;
+    margin: 0 auto;
 }
 .container1-heading-container{
     text-align: center;
+    background-color: blueviolet;
 }
 .container1-contact-info-container{
     text-align: center;
+    background-color: blueviolet;
 }
 .contact-me-picture {
     height: 220px;
@@ -39,31 +42,46 @@ html,body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .contact-me-about-text {
-    text-decoration: underline;
+    border-bottom: 5px solid #601700;
+    /* text-decoration: underline; */
     font-family: Arial, Helvetica, sans-serif;
 }
 .container2 {
     background-color: #e0d0c1;
     width: 50%;
-    display: flex;
+    height: 50%;
+    /* display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 
 }
-
+label{
+    color: #601700;
+    font-size: 14px;
+}
 .contact-form-group{
     background-color: aqua;
-    width: 80%;
-    margin: 0 auto;
+    /* width: 80%;
+    margin: 0 auto; */
 }
 
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form textarea {
   width: 95%;
-  border: 1px solid #f7f9f9;
-  background: #f7f9f9;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #c45e42;
+  background: transparent;
   margin: 0 0 5px;
   padding: 10px;
+}
+
+#contact-form input[type="text"] :active,
+#contact-form input[type="email"] :active,
+#contact-form textarea :active {
+    border-bottom: 1px solid #601700;
 }
 
 #contact-form textarea {
