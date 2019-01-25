@@ -1,0 +1,136 @@
+html,body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;          
+    padding: 0;
+    background-color: #e0d0c1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.centered {
+    height: 100%;
+    width: 100%;
+}
+.contact-me-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.container1 {
+    background-color: #c45e42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 50%;
+    margin: 0 auto;
+}
+.container1-heading-container{
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    /* background-color: blueviolet; */
+}
+.container1-contact-info-container{
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    /* background-color: blueviolet; */
+}
+.contact-me-picture {
+    height: 220px;
+    width: 220px;
+}
+.contact-me-header {
+    display: inline-block;
+    margin-right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-me-about-text {
+    border-bottom: 5px solid #601700;
+    /* text-decoration: underline; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container2 {
+    background-color: #c45e42;
+    width: 50%;
+    height: 60%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+}
+label{
+    /* color: #e0d0c1; */
+    font-size: 14px;
+}
+.contact-form-group{
+    /* background-color: aqua; */
+    /* width: 80%;
+    margin: 0 auto; */
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 95%;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid black;
+  background: transparent;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact-form input[type="text"] :active,
+#contact-form input[type="email"] :active,
+#contact-form textarea :active {
+    border-bottom: 1px solid #601700;
+}
+
+#contact-form textarea {
+    height: 100px;
+    max-width: 95%;
+    resize: none; 
+  }
+#contact-form button{
+    background-color: #c45e42;
+    cursor: pointer;
+    font-size: 15px;
+    display: block; 
+    margin: 0 auto;
+} 
+  /* see if your want them to be able to resize */
+
+/* do this or take out one of the squares */
+/* Smaller screens such as phones  */  
+@media screen and (min-width: 0px) and (max-width: 414px) {
+    .about-me-wrapper {
+        flex-direction: column;
+    }
+    .container1 {
+        width: 100%;
+    }
+    .container2 {
+        width: 100%;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        width: 87%;
+        border: 1px solid #f7f9f9;
+        background: #f7f9f9;
+        margin: 0 0 5px;
+        padding: 10px;
+    }
+    #contact-form textarea {
+        height: 100px;
+        max-width: 97%;
+        resize: none; 
+      }
+}
