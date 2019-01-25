@@ -5,7 +5,7 @@ import './Contact-Me.css'
 class ContactMe extends Component {
   render() {
     return (
-      <div>
+      <div className="centered">
         <Route path="/contact-me" render={() => (
           <div className="centered">
             <div className="contact-me-wrapper">
