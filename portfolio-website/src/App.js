@@ -4,9 +4,18 @@ import profilePicture from './deona1.jpg'
 import AboutMe from './About-Me'
 import Projects from './Projects'
 import ContactMe from './Contact-Me'
+import data from './projects.json';
 import './App.css';
 
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      projectData: data
+    }
+
+  }
+
   render() {
     return (
         <div className="main-container">
@@ -55,7 +64,9 @@ class App extends Component {
                 </div>  
               )} />
               <Route path="/about-me" component={AboutMe} />
-              <Route path="/projects" component={Projects} />
+              <Route path="/projects">
+                <Projects projects={this.state.projectData.projects}></Projects>
+              </Route>
               <Route path="/contact-me" component={ContactMe} />
        </div>
     );
