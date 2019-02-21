@@ -3,7 +3,7 @@
         {
             "id": "project_1",
             "name": "Build a Portfolio Site",
-            "img": "./images/deona1.jpg",
+            "img": "./deona1.jpg",
             "alt": "responsive portfolio site",
             "description": "For this project I was provided a design mockup, and tasked with replicating that design in into a responsive site using HTML and CSS.",
             "url": "https://github.com/deocwill8/williams_udacity_nano/tree/master/williams-build-a-portofolio-site"
@@ -11,7 +11,7 @@
         {
             "id": "project_2",
             "name": "Memory Game",
-            "img": "./images/deona1.jpg",
+            "img": "./deona1.jpg",
             "alt": "memory game",
             "description": "Once the screen has load click on a card. Once a card is clicked the timer will start and the number of moves you take will be counted. For every 10 moves you take you will lose a star, so keep the memory of where cards are placed. Matched cards will have a green background. Once are the cards are matched, you will see you time and your star rating based on your performance. Good luck!",
             "url": "https://github.com/deocwill8/williams_udacity_nano/tree/master/williams-memory-game"
@@ -19,7 +19,7 @@
         {
             "id": "project_3",
             "name": "Classic Arcade Game Clone",
-            "img": "./images/deona1.jpg",
+            "img": "./deona1.jpg",
             "description": "The objective of the game is to get the player from the grass to the water safely, meaning no bugs have collided with your player. If a bug collides with you player, your player will be sent back to thier starting position. If your player makes it to the water an alert will appear telling you so.",
             "alt": "arcade game",
             "url": "https://github.com/deocwill8/williams_udacity_nano/tree/master/williams-classic-arcade-game"
@@ -27,7 +27,7 @@
         {
             "id": "project_4",
             "name": "Restaurant Reviews",
-            "img": "./images/deona1.jpg",
+            "img": "./deona1.jpg",
             "alt": "restaurant reviews",
             "description": "This is the fifth project in Udacity's Front-End Web Developer Program. In this project I was given a static web page and tasked with making it responive and making it offline ready.",
             "url": "https://github.com/deocwill8/williams_udacity_nano/tree/master/williams-mws-restaurant-stage-1"
@@ -35,7 +35,7 @@
         {
             "id": "project_5",
             "name": "MyReads",
-            "img": "./images/deona1.jpg",
+            "img": "./deona1.jpg",
             "alt": "my reads",
             "description": "This is the sixth project in Udacity's Front-End Web Developer Program. In this project I was given a starter template and tasked to refactor it using React.",
             "url": "https://github.com/deocwill8/williams_udacity_nano/tree/master/williams-react-myreads"
