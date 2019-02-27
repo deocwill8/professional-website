@@ -3,6 +3,23 @@ import { Route } from 'react-router-dom'
 import './Contact-Me.css'
 
 class ContactMe extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      sender_first_name: "",
+      sender_last_name: "",
+      sender_mail: "",
+      sender_message: ""
+    }
+  }
+
+  handleFields = e => {
+    this.setState({[e.target.name]: e.target.value})
+    // console.log(e.target)
+  }
+  
+
   render() {
     return (
       <div className="centered">
@@ -26,20 +43,20 @@ class ContactMe extends Component {
                 <div className="contact-form-group">
                   <form action="" method="post" id="contact-form">
                       <div>
-                        <label for="first_name">First Name</label>
-                        <input type="text" id="first_name" placeholder="first name" name="user_first_name" />
+                        <label htmlFor="first_name">First Name</label>
+                        <input type="text" id="first_name" placeholder="first name" name="sender_first_name" onChange={this.handleFields} />
                       </div>
                       <div>
-                          <label for="last_name">Last Name</label>
-                          <input type="text" id="last_name" placeholder="last name" name="user_last_name" />
+                          <label htmlFor="last_name">Last Name</label>
+                          <input type="text" id="last_name" placeholder="last name" name="sender_last_name" onChange={this.handleFields} />
                         </div>
                       <div>
-                        <label for="mail">Email</label>
-                        <input type="email" id="mail" placeholder="email" name="user_mail" />
+                        <label htmlFor="mail">Email</label>
+                        <input type="email" id="mail" placeholder="email" name="sender_mail" onChange={this.handleFields} />
                       </div>
                       <div>
-                        <label for="msg">Message</label>
-                        <textarea id="msg" placeholder="please type your message here..." name="user_message"></textarea>
+                        <label htmlFor="msg">Message</label>
+                        <textarea id="msg" placeholder="please type your message here..." name="sender_message" onChange={this.handleFields}></textarea>
                       </div>
                       <button type="submit" name="submit" id="submit">Submit</button>
                     </form>

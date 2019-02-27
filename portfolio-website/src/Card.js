@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import profilePicture from './deona1.jpg'
 import './Projects.css'
 
 class Card extends Component {
