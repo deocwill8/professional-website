@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
+import axios from 'axios'
 import './Contact-Me.css'
 
 class ContactMe extends Component {
@@ -12,6 +13,20 @@ class ContactMe extends Component {
       sender_mail: "",
       sender_message: ""
     }
+  }
+
+  handleForm = e => {
+    axios.post ("https://formcarry.com/s/fAi3QyjgPQb",
+    this.state,
+    {
+      headers: {"Accept": "application/json"}}
+      ).then(function(response){
+        console.log(response);
+      }).catch(function(error){
+        console.log(error);
+      })
+      e.preventDefault();
+
   }
 
   handleFields = e => {
@@ -41,7 +56,7 @@ class ContactMe extends Component {
 
               <div className="container2">
                 <div className="contact-form-group">
-                  <form action="" method="post" id="contact-form">
+                  <form onSubmit={this.handleForm} id="contact-form">
                       <div>
                         <label htmlFor="first_name">First Name</label>
                         <input type="text" id="first_name" placeholder="first name" name="sender_first_name" onChange={this.handleFields} />
