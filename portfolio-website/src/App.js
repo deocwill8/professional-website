@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
-import profilePicture from './deona1.jpg'
-import AboutMe from './About-Me'
-import Projects from './Projects'
-import ContactMe from './Contact-Me'
+import profilePicture from './images/deona1.jpg'
+import AboutMe from './about-me/About-Me'
+import Projects from './projects-by-me/Projects'
+import ContactMe from './contact-me/Contact-Me'
 import data from './projects.json';
 import './App.css';
 

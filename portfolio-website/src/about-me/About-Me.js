@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
-import profilePicture from './deona1.jpg'
+import profilePicture from '../images/deona1.jpg'
 import './About-Me.css'
 
 class AboutMe extends Component {
