@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
-import Card from '../components/Card'
+import Card from '../Card'
+// import Card from '../Card'
 import './Projects.css'
 
 class Projects extends Component {

@@ -4,7 +4,7 @@ import profilePicture from './images/deona1.jpg'
 import AboutMe from './about-me/About-Me'
 import Projects from './projects-by-me/Projects'
 import ContactMe from './contact-me/Contact-Me'
-import data from './projects.json';
+import data from './data/projects.json';
 import './App.css';
 
 class App extends Component {
