@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import profilePicture from '../images/deona1.jpg'
+import SideBar from '../components/sidebar/sidebar'
 import './About-Me.css'
 
 class AboutMe extends Component {
   render() {
     return (
-      <div className="centered">
+      <div id="aboutMe" className="centered">
+        <SideBar />
         <Route path="/about-me" render={() => (
             <div className="centered">
               <div className="about-me-wrapper">

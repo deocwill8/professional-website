@@ -2,10 +2,13 @@
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://myname.github.io/myapp",
+  "homepage": "http://myname.github.io/myapp",
   "dependencies": {
     "axios": "^0.18.0",
+    "install": "^0.12.2",
+    "npm": "^6.9.0",
     "react": "^16.7.0",
+    "react-burger-menu": "^2.6.5",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.3"
