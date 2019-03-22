@@ -67,6 +67,11 @@ body {
   font-size: 1.15em;
 }
 
+.bm-menu-wrap {
+    bottom: 0;
+    left: 0;
+  }
+
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #373a47;

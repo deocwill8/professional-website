@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
-import profilePicture from '../images/deona1.jpg'
 import SideBar from '../components/sidebar/sidebar'
+import profilePicture from '../images/deona1.jpg'
 import './About-Me.css'
 
 class AboutMe extends Component {
   render() {
     return (
       <div id="aboutMe" className="centered">
-        <SideBar />
+      <SideBar pageWrapId={"page-wrap"} outerContainerId={"aboutMe"} />
         <Route path="/about-me" render={() => (
-            <div className="centered">
+            <div id="page-wrap" className="centered">
               <div className="about-me-wrapper">
                 <div className="container1">
                   <img className="about-me-picture" src={profilePicture} alt="deona" />

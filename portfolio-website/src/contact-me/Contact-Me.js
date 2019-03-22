@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
+import SideBar from '../components/sidebar/sidebar'
 import axios from 'axios'
 import './Contact-Me.css'
 
@@ -37,9 +38,10 @@ class ContactMe extends Component {
 
   render() {
     return (
-      <div className="centered">
+      <div id="contactMe" className="centered">
+      <SideBar pageWrapId={"page-wrap"} outerContainerId={"contactMe"} />
         <Route path="/contact-me" render={() => (
-          <div className="centered">
+          <div id="page-wrap" className="centered">
             <div className="contact-me-wrapper">
 
               <div className="container1">
