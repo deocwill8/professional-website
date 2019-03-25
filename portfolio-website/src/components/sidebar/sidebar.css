@@ -86,3 +86,9 @@ body {
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (min-width: 780px) {
+  .bm-burger-button {
+    display: none
+  }
+}
