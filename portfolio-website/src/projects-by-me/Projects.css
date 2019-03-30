@@ -6,24 +6,17 @@ guided me to create this grid layout for the cards.
 .centered {
     margin: 0 auto;
     max-width: 90%;
-    /* background-color: chartreuse; */
 }
 
-/* .center-cards {
-    background-color: aqua;
-} */
-
 .cards {
-    /* background-color: blueviolet; */
     display: flex;
     flex-wrap: wrap; 
 }
 
 .card {
     flex: 1 0 30%;
-    max-width: calc(30% - 1em);
     box-sizing: border-box;
-    margin: 1rem .25em;
+    margin: 16px 17px;
     background-color: #c45e42;
 }
 
@@ -50,18 +43,27 @@ img {
     object-fit: scale-down;
 }
 
+/* Larger screens  */  
+@media screen and (min-width: 1025px)  {
+    .card {
+        max-width: 30%;
+    }
+}
+
 /* Tablets */
-@media screen and (min-width: 415px) and (max-width: 768px) {
+@media screen and (min-width: 415px) and (max-width: 1024px) {
     .card {
         flex: 1 0 45%;
-        max-width: 50%
+        max-width: 45%
     }
 }
   
 /* Smaller screens such as phones  */  
 @media screen and (min-width: 0px) and (max-width: 414px) {
+    .cards {
+        overflow-x: hidden;
+    }
     .card {
-        flex: 1 0 100%;
-        max-width: 100%;
+        flex: 0 0 90%;
     }
 }
