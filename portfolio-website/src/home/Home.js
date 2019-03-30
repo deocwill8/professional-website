@@ -34,15 +34,15 @@ class Home extends Component {
                     <div className="navigation-container">
                           <Link 
                           className="navigation-button"
-                          to="/about-me">About Me
+                          to="/about-me"><p className="navigation-button-text">About</p>
                           </Link>
                           <Link 
                           className='navigation-button'
-                          to="/projects">Projects
+                          to="/projects"><p className="navigation-button-text">Projects</p>
                           </Link>
                           <Link 
                           className='navigation-button last-button'
-                          to="/contact-me">Contact Me
+                          to="/contact-me"><p className="navigation-button-text-last">Contact</p>
                           </Link>
                     </div>
                     <div className="container-footer">
