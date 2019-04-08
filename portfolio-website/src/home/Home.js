@@ -34,16 +34,15 @@ class Home extends Component {
                     and more recently with desktop publishing software like Aldus 
                     PageMaker including versions of Lorem Ipsum.
                   </p>
-                  </div>
-                </div> 
+                </div>
+              </div> 
               <div className="footer-container">
                 <p className="footer-text">Copyright 2018 Deona Williams. Made in the USA</p>
               </div>
             </div>  
               )} />
        </div>
-    );
+    )
   }
 }
-
 export default Home;
