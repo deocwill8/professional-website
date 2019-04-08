@@ -1,7 +1,3 @@
-/* .centered {
-    height: 100%;
-    width: 100%;
-} */
 .about-me-wrapper {
     display: flex;
     flex-direction: row;
@@ -33,9 +29,6 @@
     height: 60%;
     width: 60%;
 }
-
-
-  
 
 /* do this or take out one of the squares */
 /* Smaller screens such as phones  */  
