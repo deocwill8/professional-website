@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import Navbar from '../components/navbar/navbar'
 import SideBar from '../components/sidebar/sidebar'
 import mainPicture from '../images/typing.jpg'

@@ -12,12 +12,13 @@ class AboutMe extends Component {
       <Navbar />
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"aboutMe"} />
         <Route path="/about-me" render={() => (
-            <div id="page-wrap" className="centered">
+            <div id="page-wrap">
               <div className="about-me-wrapper">
-                <div className="container1">
-                  <img className="about-me-picture" src={profilePicture} alt="deona" />
-                </div>
-                <div className="container2">
+                <div className="about-me-container">
+                  <div className="container-one">
+                    <img className="about-me-picture" src={profilePicture} alt="deona" />
+                  </div>
+                  <div className="container-two">
                     <p className="about-me-text">
                     First paragraph. is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since 
@@ -30,6 +31,13 @@ class AboutMe extends Component {
                     PageMaker including versions of Lorem Ipsum. End
                     </p>  
                   </div>
+                  <div className="container-three">
+                    <p className="about-me-text">
+                      First paragraph. is simply dummy text of the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard dummy text ever since 
+                    </p>  
+                  </div>
+                </div>
               </div>
             </div>
           )} />
