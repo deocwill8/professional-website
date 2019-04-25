@@ -7,42 +7,47 @@
 }
 .about-me-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: blueviolet;
     width: 100%;
     height: auto;
 }
 .container-one {
-    background-color: yellow;
-    border: 2px solid red;
+    /* background-color: yellow;
+    border: 2px solid red; */
     margin-right: 0.5%;
-    text-align: center;
     width: 33%;
     height: 100%;
 }
 .container-two {
-    background-color: yellow;
-    border-top: 2px solid red;
+    /* background-color: yellow;
+    border-top: 2px solid red; */
     margin-right: 0.5%;
     width: 33%;
     height: 100%;
 }
-.container-two:after {
-    content:""; 
-    background: black; 
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    height: 50%; 
-    width: 1px;
-  }
+/* .container-two {
+    margin-right: 0.5%;
+    width: 33%;
+    height: 100%;
+    padding: 5px;
+    background-image: linear-gradient(purple, purple),
+    linear-gradient(purple, purple),
+    linear-gradient(purple, purple),
+    linear-gradient(purple, purple),
+    linear-gradient(transparent, transparent); 
+    background-repeat: no-repeat;
+    background-size: 4px 50%, 50% 4px, 4px 50%, 50% 4px, calc(100% - 8px) calc(100% - 8px);
+    background-position: left bottom, left bottom, right top, right top;
+} */
 .container-three {
-    background-color: yellow;
-    border: 2px solid red;
+    /* background-color: yellow; */
     width: 33%;
     height: 100%;
 }
 .about-me-picture {
-    width: 100%;
+    width: 70%;
 }
 .about-me-text {
     text-align: left;
