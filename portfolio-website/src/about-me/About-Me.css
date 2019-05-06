@@ -11,21 +11,19 @@
     justify-content: center;
     background-color: blueviolet;
     width: 100%;
-    height: auto;
+    height: 60%;
 }
 .container-one {
-    /* background-color: yellow;
-    border: 2px solid red; */
+    background-color: pink;
     margin-right: 0.5%;
     width: 33%;
-    height: 100%;
+    height: auto;
 }
 .container-two {
-    /* background-color: yellow;
-    border-top: 2px solid red; */
+    background-color: red;
     margin-right: 0.5%;
     width: 33%;
-    height: 100%;
+    height: auto;
 }
 /* .container-two {
     margin-right: 0.5%;
@@ -42,12 +40,13 @@
     background-position: left bottom, left bottom, right top, right top;
 } */
 .container-three {
-    /* background-color: yellow; */
+    background-color: yellow;
     width: 33%;
-    height: 100%;
+    height: auto;
 }
 .about-me-picture {
-    width: 70%;
+   height: 50%;
+   width: 80%;
 }
 .about-me-text {
     text-align: left;
@@ -59,14 +58,32 @@
 
 /* do this or take out one of the squares */
 /* Smaller screens such as phones  */  
-/* @media screen and (min-width: 0px) and (max-width: 414px) {
-    .about-me-wrapper {
+@media screen and (min-width: 0px) and (max-width: 414px) {
+    .about-me-wrapper{
         flex-direction: column;
+        height: 100%;
     }
-    .container1 {
+    .nav-container {
+        height: 15%;
+        width: 100%;
+        background-color: chartreuse;
+    }
+    .about-me-container {
+        background-color: tomato;
+        flex-direction: column;
+        height: 85%;
+    }
+    .container-one {
         width: 100%;
     }
-    .container2 {
+    .container-two {
         width: 100%;
     }
-} */
+    .container-three {
+        width: 100%;
+    }
+    .about-me-picture {
+        height: 70%;
+        width: 100%;
+     }
+}
