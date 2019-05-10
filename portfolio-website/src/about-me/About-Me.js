@@ -35,7 +35,7 @@ class AboutMe extends Component {
                     </p>  
                   </div>
                   <div className="container-three">
-                    <p className="about-me-text">
+                    <p className="quote-text">
                       First paragraph.  is simply dummy text of the printing and typesetting industry. 
                       Lorem Ipsum has been the industry's standard dummy text ever since 
                     </p> 
