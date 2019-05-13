@@ -14,9 +14,10 @@ class AboutMe extends Component {
         <Route path="/about-me" render={() => (
             <div id="page-wrap">
               <div className="about-me-wrapper">
-                {/* <div className="nav-container">
-                  <h2>Deona Williams</h2>
-                </div> */}
+                <div className="page-title">
+                  <h1>About</h1>
+                  <hr className="divider"></hr>
+                </div>
                 <div className="about-me-container">
                   <div className="container-one">
                     <img className="about-me-picture" src={profilePicture} alt="deona" />
