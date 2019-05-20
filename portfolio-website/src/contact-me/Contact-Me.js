@@ -43,8 +43,14 @@ class ContactMe extends Component {
       <Navbar />
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"contactMe"} />
         <Route path="/contact-me" render={() => (
-          <div id="page-wrap" className="centered">
+          <div id="page-wrap">
             <div className="contact-me-wrapper">
+              <div className="contact-page-title">
+                <h1>About</h1>
+                <hr className="divider"></hr>
+              </div>
+              <div className="contact-content-container">
+            {/* container 1 */}
 
               <div className="container1">
                 <div className="container1-heading-container">
@@ -58,6 +64,7 @@ class ContactMe extends Component {
                 </div>
               </div>
 
+              {/* container 2 */}
               <div className="container2">
                 <div className="contact-form-group">
                   <form onSubmit={this.handleForm} id="contact-form">
@@ -81,13 +88,11 @@ class ContactMe extends Component {
                     </form>
                 </div>
             </div>
-
           </div>
-
         </div>
-      )} />
-       
       </div>
+    )} />  
+  </div>
     );
   }
 }
