@@ -5,6 +5,9 @@ import SideBar from '../components/sidebar/sidebar'
 import axios from 'axios'
 import './Contact-Me.css'
 
+const textArray = ['eat', 'sleep', 'drink', 'snore', 'foo', 'buzz', 'whatever'];
+
+
 class ContactMe extends Component {
 
   constructor(props){
@@ -13,7 +16,9 @@ class ContactMe extends Component {
       sender_first_name: "",
       sender_last_name: "",
       sender_mail: "",
-      sender_message: ""
+      sender_message: "",
+      timeInterval: 1500,
+      wordIdx: 0
     }
   }
 
@@ -35,9 +40,22 @@ class ContactMe extends Component {
     this.setState({[e.target.name]: e.target.value})
     // console.log(e.target)
   }
-  
+
+  componentDidMount() {
+    this.shuffleText = setInterval(() => {
+      let currentWordtIdx = this.state.wordIdx
+      this.setState({ wordIdx : currentWordtIdx + 1 })
+    }, this.state.timeInterval)
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.shuffleText)
+  }
 
   render() {
+    let textThatChanges = textArray[this.state.wordIdx % textArray.length];
+    // let textThatChanges = this.props.wordAnimations.contactMeFor[this.state.wordIdx % this.props.wordAnimations.contactMeFor.length];
+
     return (
       <div id="contactMe">
       <Navbar />
@@ -55,7 +73,7 @@ class ContactMe extends Component {
               <div className="container1">
                 <div className="container1-heading-container">
                   <h2 className="contact-me-header">Lets Talk About</h2>
-                  <h4 className="contact-me-about-text">Job Opprotunites</h4>
+                  <h4 className="contact-me-about-text">{textThatChanges}</h4>
                 </div>
                 <div className="container1-contact-info-container">
                   <p>Email me at: something@gmail.com</p> 

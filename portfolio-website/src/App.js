@@ -6,13 +6,15 @@ import AboutMe from './about-me/About-Me'
 import Projects from './projects-by-me/Projects'
 import ContactMe from './contact-me/Contact-Me'
 import data from './data/projects.json';
+import cmfWords from './data/contact-me-for.json'
 import './App.css';
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      projectData: data
+      projectData: data,
+      words: cmfWords
     }
   }
 
@@ -22,7 +24,10 @@ class App extends Component {
         <div id="mainContainer">
           <Route exact path="/" component={Home} />
           <Route path="/about-me" component={AboutMe} />
-          <Route path="/contact-me" component={ContactMe} />
+          <Route 
+            path="/contact-me" 
+            render={ (props) => <ContactMe {...props} wordAnimations={this.state.words.contactMeFor} />} 
+           />
           <Route
             path="/projects"
             render={ (props) => <Projects {...props} projects={this.state.projectData.projects} />}
