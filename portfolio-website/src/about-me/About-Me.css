@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 .page-title {
@@ -103,8 +103,61 @@
     font-weight: 100;
 }
 
-/* do this or take out one of the squares */
-/* Smaller screens such as phones  */  
+ /**
+  * media queries
+  **/
+  
+  /**
+  Tablet: Apple iPad 
+  */
+  @media screen and (min-width: 415px) and (max-width: 1075px) {
+    .about-me-wrapper{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .nav-container {
+        height: 15%;
+        width: 100%;
+        background-color: chartreuse;
+    }
+    .about-me-container {
+        background-color: tomato;
+        flex-direction: column;
+        height: 100%;
+    }
+    .container-one {
+        width: 100%;
+        height: 85%;
+        background-image: none;
+        /* background-color: blue; */
+    }
+    /* .about-me-picture {
+        height: 50%;
+        width: 50%;
+    } */
+
+    .about-me-picture {
+        margin: 0;
+        height: 50%;
+        width: 40%;
+        object-fit: cover;
+    }
+
+    .container-two {
+        width: 100%;
+        background-image: none;
+    }
+    .container-three {
+        width: 100%;
+        background-image: none;
+    }
+  }
+  /**
+   Mobile: Google Nexus 5 
+    * do this or take out one of the squares
+    * Smaller screens such as phones  
+   **/
+ 
 @media screen and (min-width: 0px) and (max-width: 414px) {
     .about-me-wrapper{
         flex-direction: column;
@@ -122,15 +175,18 @@
     }
     .container-one {
         width: 100%;
+        background-image: none;
     }
     .container-two {
         width: 100%;
+        background-image: none;
     }
     .container-three {
         width: 100%;
+        background-image: none;
     }
     .about-me-picture {
         height: 70%;
         width: 100%;
-     }
+    }
 }
