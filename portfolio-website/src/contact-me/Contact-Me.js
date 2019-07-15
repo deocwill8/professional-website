@@ -5,8 +5,6 @@ import SideBar from '../components/sidebar/sidebar'
 import axios from 'axios'
 import './Contact-Me.css'
 
-const textArray = ['eat', 'sleep', 'drink', 'snore', 'foo', 'buzz', 'whatever'];
-
 
 class ContactMe extends Component {
 
@@ -41,20 +39,7 @@ class ContactMe extends Component {
     // console.log(e.target)
   }
 
-  componentDidMount() {
-    this.shuffleText = setInterval(() => {
-      let currentWordtIdx = this.state.wordIdx
-      this.setState({ wordIdx : currentWordtIdx + 1 })
-    }, this.state.timeInterval)
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.shuffleText)
-  }
-
   render() {
-    let textThatChanges = textArray[this.state.wordIdx % textArray.length];
-    // let textThatChanges = this.props.wordAnimations.contactMeFor[this.state.wordIdx % this.props.wordAnimations.contactMeFor.length];
 
     return (
       <div id="contactMe">
@@ -73,7 +58,7 @@ class ContactMe extends Component {
               <div className="container1">
                 <div className="container1-heading-container">
                   <h2 className="contact-me-header">Lets Talk About</h2>
-                  <h4 className="contact-me-about-text">{textThatChanges}</h4>
+                  <h4 className="contact-me-about-text">Web opprotunities</h4>
                 </div>
                 <div className="container1-contact-info-container">
                   <p>Email me at: something@gmail.com</p> 
