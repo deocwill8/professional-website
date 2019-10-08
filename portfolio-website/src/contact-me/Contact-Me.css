@@ -66,6 +66,7 @@
 label{
     /* color: #e0d0c1; */
     font-size: 14px;
+    float: left;
 }
 .contact-form-group{
     /* background-color: aqua; */
