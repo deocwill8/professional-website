@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import Navbar from '../components/navbar/navbar'
 import SideBar from '../components/sidebar/sidebar'
+import Button from '@material-ui/core/Button'
 import axios from 'axios'
 import { IconContext } from "react-icons";
 import { FaLinkedin } from 'react-icons/fa'
@@ -60,15 +61,12 @@ class ContactMe extends Component {
         <Route path="/contact-me" render={() => (
           <div id="page-wrap">
             <div className="contact-me-wrapper">
-              <div className="contact-page-title">
-                <h1>About</h1>
-              </div>
               <div className="contact-content-container">
             {/* container 1 */}
 
               <div className="container1">
                 <div className="container1-heading-container">
-                  <h2>Let's keep in touch!</h2>
+                  <h2 className="heading-title">Let's keep in touch!</h2>
                   <h4>I will be sure to reply back to you!</h4>
                 </div>
                 <div className="container1-contact-info-container">
@@ -102,7 +100,7 @@ class ContactMe extends Component {
                         <label htmlFor="msg">Message</label>
                         <textarea id="msg" name="sender_message" onChange={this.handleFields}></textarea>
                       </div>
-                      <button type="submit" name="submit" id="submit">Submit</button>
+                      <Button variant="contained" color="primary">Submit</Button>
                     </form>
                 </div>
             </div>
