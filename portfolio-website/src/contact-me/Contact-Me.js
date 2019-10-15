@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 import Navbar from '../components/navbar/navbar'
 import SideBar from '../components/sidebar/sidebar'
 import Button from '@material-ui/core/Button'
+import TextField from '@material-ui/core/TextField'
 import axios from 'axios'
 import { IconContext } from "react-icons";
 import { FaLinkedin } from 'react-icons/fa'
@@ -10,11 +11,6 @@ import { FaGithubSquare } from 'react-icons/fa'
 import { FaEnvelopeOpenText }  from 'react-icons/fa'
 import './Contact-Me.css'
 
-{/* <IconContext.Provider value={{ color: "blue" }}>
-<div>
-  <FaEnvelopeOpenText />
-</div>
-</IconContext.Provider> */}
 
 class ContactMe extends Component {
 
@@ -73,7 +69,7 @@ class ContactMe extends Component {
                   <IconContext.Provider value={{ size: '20px' }}>
                     <div>
                       <p> <FaEnvelopeOpenText /> something@gmail.com</p> 
-                      <p> Follow @  <FaGithubSquare /> </p> 
+                      <p>Follow @ <FaGithubSquare /> </p> 
                       <p>Follow @ <FaLinkedin /></p>  
                     </div>
                   </IconContext.Provider>
@@ -84,23 +80,38 @@ class ContactMe extends Component {
               <div className="container2">
                 <div className="contact-form-group">
                   <form onSubmit={this.handleForm} id="contact-form">
-                      <div>
-                        <label htmlFor="first_name">First Name</label>
-                        <input type="text" id="first_name" name="sender_first_name" onChange={this.handleFields} />
-                      </div>
-                      <div>
-                          <label htmlFor="last_name">Last Name</label>
-                          <input type="text" id="last_name" name="sender_last_name" onChange={this.handleFields} />
-                        </div>
-                      <div>
-                        <label htmlFor="mail">Email</label>
-                        <input type="email" id="mail" name="sender_mail" onChange={this.handleFields} />
-                      </div>
-                      <div>
-                        <label htmlFor="msg">Message</label>
-                        <textarea id="msg" name="sender_message" onChange={this.handleFields}></textarea>
-                      </div>
-                      <Button variant="contained" color="primary">Submit</Button>
+                    <TextField 
+                      id="first_name" 
+                      label="First Name" 
+                      placeholder="First Name"
+                      className="contact-form-input"
+                      onChange={this.handleFields}
+                    />
+                    <TextField 
+                      id="last_name" 
+                      label="Last Name" 
+                      placeholder="Last Name"
+                      className="contact-form-input"
+                      onChange={this.handleFields}
+                    />
+                    <TextField 
+                      id="mail" 
+                      label="Email" 
+                      autoComplete="email"
+                      type="email"
+                      placeholder="Email"
+                      className="contact-form-input"
+                      onChange={this.handleFields}
+                    />
+                    <TextField
+                      id="msg"
+                      label="Message"
+                      onChange={this.handleFields}
+                      className="contact-form-input"
+                      placeholder="Message"
+                      multiline
+                    />
+                    <Button variant="contained" color="primary">Submit</Button>
                     </form>
                 </div>
             </div>
