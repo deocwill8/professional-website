@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import Navbar from '../components/navbar/navbar'
 import SideBar from '../components/sidebar/sidebar'
+import CircleIcon from '../components/social/icon'
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 import axios from 'axios'
@@ -66,6 +67,7 @@ class ContactMe extends Component {
                   <h4>I will be sure to reply back to you!</h4>
                 </div>
                 <div className="container1-contact-info-container">
+                <CircleIcon />
                   <IconContext.Provider value={{ size: '20px' }}>
                     <div>
                       <p> <FaEnvelopeOpenText /> something@gmail.com</p> 
